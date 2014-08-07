@@ -1,0 +1,19 @@
+<template name="gallery_upload">
+  <h2>{{title}}</h2>
+
+  <div class="uploadForm"></div>
+
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="{{uploadProgress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{uploadProgress}}%;">
+      {{uploadProgress}}%
+    </div>
+  </div>
+
+  <div class="photos">
+    {{#each photos}}
+    <a href="#" class="thumbnail">
+      <img src="{{cloudinary.url}}">
+    </a>
+    {{/each}}
+  </div>
+</template>

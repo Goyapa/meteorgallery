@@ -4,5 +4,8 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-autopublish
-insecure
+less
+collection2
+autoform
+iron-router
+bootstrap3-less
